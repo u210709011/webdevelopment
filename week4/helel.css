@@ -1,0 +1,44 @@
+@media (max-width: 500px) {
+    body {
+    margin: 0 2px;
+    }
+}
+
+#flex-container {
+    display: flex;
+
+    align-items: stretch;
+
+    position: fixed;
+
+    padding: 30px;
+
+    background-color: grey;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+    background-color: brown;
+    border-radius: 50px;
+    border-top: 30px;
+    border-bottom: 30px;
+    
+}
+
+p {
+    margin-top: 100px;
+}
+
+.pop-up {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    border: 2px grey;
+}
+    
