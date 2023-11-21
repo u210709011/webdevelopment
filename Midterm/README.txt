@@ -1,4 +1,4 @@
-Github link: https://github.com/u210709011/webdevelopment/tree/b3bd0fdae54f489fad3e9974ad2cb596e2e7e397/Midterm
+Github link: https://github.com/u210709011/webdevelopment/tree/main/Midterm
 
 
 Some explanations:
