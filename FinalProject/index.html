@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <script src="main.js"></script>
+    <title>Student Management System</title>
+  </head>
+  <body>
+    <!-- container block start -->
+    <div class="container">
+      <!-- add course start -->
+      <button id="add-course-button">Click To Add Course</button>
+
+      <hr />
+
+      <section id="add-course" style="display: none">
+        <form id="course-form">
+          <h1>Add Course and Set Grading Scale</h1>
+          <label for="course-name">Course Name:</label>
+          <input type="text" id="course-name" required />
+
+          <label for="grading-scale">Grading Scale:</label>
+          <select id="grading-scale" required>
+            <option value="10-point">10-point</option>
+            <option value="7-point">7-point</option>
+          </select>
+
+          <button type="button" id="add-course-submit-button">
+            Add Course
+          </button>
+        </form>
+      </section>
+      <!-- add course end -->
+
+      <!-- select course start -->
+      <section id="select-course">
+        <h2>Select Course</h2>
+        <select id="course-dropdown"></select>
+      </section>
+      <!-- select course end -->
+
+      <!-- add student start -->
+      <button id="add-student-button">Click To Add Student Score</button>
+      <section id="add-student" style="display: none">
+        <form id="student-form">
+          <h1>Add Student and Scores</h1>
+          <label for="student-id">Student ID:</label>
+          <input type="text" id="student-id" required />
+
+          <label for="student-name">Student Name:</label>
+          <input type="text" id="student-name" required />
+
+          <label for="midterm-score">Midterm Score:</label>
+          <input type="number" id="midterm-score" required />
+
+          <label for="final-score">Final Score:</label>
+          <input type="number" id="final-score" required />
+
+          <button type="button" id="add-student-submit-button">
+            Add Student
+          </button>
+        </form>
+      </section>
+      <!-- add student end -->
+
+      <hr />
+
+      <!-- filter student start -->
+      <section id="filter-students">
+        <label for="filter-option">Filter Option:</label>
+        <select id="filter-option">
+          <option value="All">All Students</option>
+          <option value="Passed">Passed Students</option>
+          <option value="Failed">Failed Students</option>
+        </select>
+        <button type="button" id="filter-students-button">Filter</button>
+      </section>
+
+      <button type="button" id="detailed-statistics-button">
+        Detailed Statistics
+      </button>
+      <!-- filter student end -->
+
+      <hr />
+
+      <!-- student scores start -->
+      <section id="view-scores">
+        <h2>Student Scores</h2>
+        <table id="scores-table"></table>
+      </section>
+      <!-- student scores end -->
+
+      <!-- student search start -->
+      <section id="search-student">
+        <label for="search-name">Search Student:</label>
+        <input type="text" id="search-name" />
+        <button type="button" id="search-button">Search</button>
+        <h2>Searched Students</h2>
+        <table id="search-results-table"></table>
+      </section>
+      <!-- student search end -->
+    </div>
+    <!-- container block end -->
+
+  </body>
+  
+</html>
